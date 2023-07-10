@@ -75,10 +75,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
 	git
 	fzf-zsh-plugin
-	kubectl
-	docker
-	docker-compose
-	yarn
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -138,6 +134,8 @@ GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 export RUSTC_WRAPPER="$(which sccache)"
+
+eval "$(starship init zsh)"
 
 macchina
 

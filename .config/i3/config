@@ -36,6 +36,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id blueberry-tray
 
 exec --no-startup-id picom
+exec --no-startup-id setxkbmap pl
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

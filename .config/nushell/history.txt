@@ -196,3 +196,11 @@ z dot
 git add .
 stow .
 z add . 
+git restore .
+git  status
+v .gitignore
+nvim .gitignore
+v .gitignore
+nvim .gitignore
+fd --hidden history
+nvim .gitignore

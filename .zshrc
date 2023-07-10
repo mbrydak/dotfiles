@@ -1,3 +1,4 @@
+zmodload zsh/zprof
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -114,14 +115,6 @@ export PATH=$PATH:$HOME/.cargo/bin
 
 source <(k3d completion zsh)
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-eval "$(zoxide init zsh)"
-
-export PATH=$PATH:/usr/local/go/bin
 eval "$(direnv hook zsh)"
 
 autoload -U +X bashcompinit && bashcompinit
@@ -135,7 +128,9 @@ export PATH=$PATH:$GOPATH/bin
 
 export RUSTC_WRAPPER="$(which sccache)"
 
-eval "$(starship init zsh)"
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 
+eval "$(starship init zsh)"
 macchina
 
+zprof > /dev/null | tee ~/zprof.out 2>&1 > /dev/null

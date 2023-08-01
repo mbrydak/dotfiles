@@ -441,8 +441,8 @@ cursor:
 # Default:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
-shell:
-  program: /home/max/.cargo/bin/nu
+#shell:
+#  program: /home/max/.cargo/bin/nu
 #  args:
 #    - --login
 

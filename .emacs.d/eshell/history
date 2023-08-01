@@ -1,0 +1,17 @@
+ls
+cd
+ls
+clear
+ls
+cd code/
+ls
+nvim
+l
+ls l-a
+ls -la
+cd
+clear
+clear
+ls
+cd code/
+ls

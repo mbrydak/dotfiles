@@ -10,4 +10,3 @@ eval "$(direnv hook bash)"
 # Use bash-completion, if available
 #[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
 #    . /usr/share/bash-completion/bash_completion
-export KUBECONFIG="/home/max/code/test/cntm/k3s.yaml"
